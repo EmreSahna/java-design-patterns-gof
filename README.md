@@ -1,0 +1,1 @@
+# Java implementations of the 23 Gang of Four (GoF) design patterns
