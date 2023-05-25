@@ -7,13 +7,16 @@ public class App {
     private static final Logger logger = LoggerFactory.getLogger(App.class);
 
     public static void main(String[] args) {
-        Car car = CarFactory.getCar("Sedan");
-        logger.info(car.start());
+        CarFactory carFactory1 = new CoupeFactory();
+        Car coupe = carFactory1.create();
+        logger.info(coupe.getName());
 
-        car = CarFactory.getCar("SUV");
-        logger.info(car.start());
+        CarFactory carFactory2 = new SUVFactory();
+        Car suv = carFactory2.create();
+        logger.info(suv.getName());
 
-        car = CarFactory.getCar("Coupe");
-        logger.info(car.start());
+        CarFactory carFactory3 = new SedanFactory();
+        Car sedan = carFactory3.create();
+        logger.info(sedan.getName());
     }
 }

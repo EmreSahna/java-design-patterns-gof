@@ -1,6 +1,6 @@
 package com.emresahna;
 
-public class Sedan implements Car {
+public class SedanCar implements Vehicle {
     @Override
     public String start() {
         return "Sedan started";

@@ -1,6 +1,6 @@
 package com.emresahna;
 
-public class Coupe implements Car {
+public class CoupeCar implements Vehicle {
     @Override
     public String start() {
         return "Coupe started";
